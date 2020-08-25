@@ -199,10 +199,17 @@ gboolean handle_keyevent (EVENT event)
         return true;
     }
 
+    /* play/pause */
+    if (event == EVENT_PLAY_PAUSE)
+    {
+        aud_drct_play_pause ();
+        return true;
+    }
+
     /* pause */
     if (event == EVENT_PAUSE)
     {
-        aud_drct_play_pause ();
+        aud_drct_pause ();
         return true;
     }
 

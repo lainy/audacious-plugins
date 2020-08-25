@@ -209,10 +209,18 @@ bool handle_keyevent (Event event)
 		}
 		break;
 
+	/* pause/resume */
+	case Event::PlayPause:
+		{
+			aud_drct_play_pause();
+			return true;
+		}
+		break;
+
 	/* pause */
 	case Event::Pause:
 		{
-			aud_drct_play_pause();
+			aud_drct_pause();
 			return true;
 		}
 		break;

@@ -70,7 +70,8 @@ static void ok_callback ();
 static const char * event_desc[EVENT_MAX] = {
     [EVENT_PREV_TRACK] = N_("Previous track"),
     [EVENT_PLAY] = N_("Play"),
-    [EVENT_PAUSE] = N_("Pause/Resume"),
+    [EVENT_PLAY_PAUSE] = N_("Pause/Resume"),
+    [EVENT_PAUSE] = N_("Pause"),
     [EVENT_STOP] = N_("Stop"),
     [EVENT_NEXT_TRACK] = N_("Next track"),
     [EVENT_FORWARD] = N_("Step forward"),

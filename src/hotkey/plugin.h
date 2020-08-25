@@ -9,6 +9,7 @@
 typedef enum {
     EVENT_PREV_TRACK = 0,
     EVENT_PLAY,
+    EVENT_PLAY_PAUSE,
     EVENT_PAUSE,
     EVENT_STOP,
     EVENT_NEXT_TRACK,

@@ -60,7 +60,8 @@ static PrefWidget *last_instance = nullptr;
 static const QMap<Event, const char*> event_desc = {
 	{ Event::PrevTrack, N_("Previous track") },
 	{ Event::Play, N_("Play") },
-	{ Event::Pause, N_("Pause/Resume") },
+	{ Event::PlayPause, N_("Pause/Resume") },
+	{ Event::Pause, N_("Pause") },
 	{ Event::Stop, N_("Stop") },
 	{ Event::NextTrack, N_("Next track") },
 	{ Event::Forward, N_("Step forward") },

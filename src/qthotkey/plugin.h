@@ -13,6 +13,7 @@ namespace GlobalHotkeys {
 enum class Event {
 	PrevTrack = 0,
 	Play,
+	PlayPause,
 	Pause,
 	Stop,
 	NextTrack,
