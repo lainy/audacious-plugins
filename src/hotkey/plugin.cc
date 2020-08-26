@@ -209,7 +209,10 @@ gboolean handle_keyevent (EVENT event)
     /* pause */
     if (event == EVENT_PAUSE)
     {
-        aud_drct_pause ();
+        if (!aud_drct_get_paused ())
+        {
+            aud_drct_pause ();
+        }
         return true;
     }
 

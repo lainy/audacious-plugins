@@ -220,7 +220,10 @@ bool handle_keyevent (Event event)
 	/* pause */
 	case Event::Pause:
 		{
-			aud_drct_pause();
+			if (!aud_drct_get_paused())
+			{
+				aud_drct_pause();
+			}
 			return true;
 		}
 		break;
